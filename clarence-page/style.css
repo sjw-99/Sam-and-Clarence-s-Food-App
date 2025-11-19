@@ -1,0 +1,159 @@
+
+/* --- 2. Base & Typography (Styled Directly in Body) --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* Base Colors & Styling applied directly */
+    background-color: #FEF0E0; /* Soft Peach/Cream background */
+    color: #000; /* Primary Text Color */
+    line-height: 1.4;
+}
+
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* --- 4. Shared Components --- */
+.accent-box {
+    /* Soft Orange Styling */
+    background-color: #FFB347; 
+    color: #333;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-arrow-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #FFB347;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* --- 5. Profile Header Layout (Grid) --- */
+.profile-header-grid {
+    display: grid;
+    grid-template-columns: 150px 1fr 150px; 
+    grid-template-rows: auto auto auto;
+    gap: 16px;
+    margin-top: 50px; 
+}
+
+.logo-box {
+    grid-column: 2 / 3;
+    background-color: #EAEAEA; /* Logo Grey */
+    height: 60px;
+    border-radius: 56px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-greeting {
+    grid-column: 1 / 2;
+    height: 80px;
+    font-size: 1.5rem;
+}
+
+.user-description {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 60px;
+    font-size: 0.9rem;
+}
+
+.avatar-container {
+    grid-column: 3 / 8; 
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-left: 80px;
+}
+
+.avatar-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #D32F2F; /* Avatar Red */
+    border-radius: 50%;
+    border: 4px solid #FEF0E0; /* Border matches page background */
+    padding: 50px;
+}
+
+.follow-actions {
+    grid-column: 3 / 10; 
+    grid-row: 3 / 4;
+    display: flex;
+    gap: 8px;
+    padding-right: -180px;
+}
+
+.follow-btn {
+    flex-grow: 1;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 8px 0;
+    font-weight: 700;
+}
+
+/* --- 6. Recipe & Suggestion Modules (Flexbox) --- */
+.recipe-list, .suggestion-list {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: column;
+    width: 280px; 
+    background-color: white; 
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+
+.recipe-title {
+    order: 1;
+    background-color: #E68A00; /* Strong Orange */
+    color: #000000;
+    padding: 16px;
+    border-radius: 6px 6px 0 0;
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 140px; 
+    object-fit: cover;
+    display: block;
+    margin-top: -5px; 
+    border-radius: 0 0 6px 6px;
+}
+
+.suggestion-card {
+    width: 280px; 
+    height: 100px;
+    background-color: #FFB347; /* Soft Orange */
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); 
+}

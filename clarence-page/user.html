@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        
+        <nav class="app-nav">
+            <button class="nav-arrow-btn" aria-label="Go back to previous page">&#x2190;</button>
+        </nav>
+
+        <header class="profile-header-grid">
+            <div class="logo-box">App Logo</div>
+
+            <div class="user-greeting accent-box">Hi User</div>
+            
+            <div class="user-description accent-box">user description</div>
+            
+            <div class="avatar-container">
+                <div class="avatar-icon" aria-label="User profile image"></div>
+            </div>
+
+            <div class="follow-actions">
+                <button class="follow-btn accent-box">following</button>
+                <button class="follow-btn accent-box">followers</button>
+            </div>
+        </header>
+
+        <main class="content-area">
+            
+            <section class="recipe-section module-card">
+                <h5>My Recipes</h5>
+                <div class="recipe-list">
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Thai red curry</div>
+                        <img src="/images/Thaicurry.jpg" alt="Image of Thai red curry" loading="lazy">
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Chicken madras</div>
+                        <img src="/images/Chicken-Madras.jpg" alt="Image of Chicken madras" loading="lazy">
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Pad thai</div>
+                        <img src="/images/Pad_Thai.jpg" alt="Image of Pad thai" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <section class="suggestion-section module-card">
+                <h5>What you may like</h5>
+                <div class="recipe-list">
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Green curry</div>
+                        <img src="/images/Green-curry.jpg" alt="Image of Thai red curry" loading="lazy">
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Chicken tikka masala</div>
+                        <img src="/images/Chick-t-masala.jpg" alt="Image of Chicken madras" loading="lazy">
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Beef noodle soup</div>
+                        <img src="/images/noodlebeef.jpg" alt="Image of Pad thai" loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <section class="suggestion-section module-card">
+                <h5>What others may like</h5>
+                <div class="recipe-list">
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Lomo saltado</div>
+                        <img src="/images/lomo_saltado.jpg" alt="Image of Thai red curry" loading="lazy">
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Tonkotsu ramen</div>
+                        <img src="/images/Tonkotsu-Ramen.jpg" alt="Image of Chicken madras" loading="lazy">
+                    </div>
+                    
+                    <div class="recipe-card">
+                        <div class="recipe-title accent-box">Pasta bolognese</div>
+                        <img src="/images/Pasta-Bolognese.jpg" alt="Image of Pad thai" loading="lazy">
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
